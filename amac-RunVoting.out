@@ -1,0 +1,44 @@
+==83206== Memcheck, a memory error detector
+==83206== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==83206== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==83206== Command: ./RunVoting.c++.app
+==83206== 
+==83206== WARNING: Support on MacOS 10.8 is experimental and mostly broken.
+==83206== WARNING: Expect incorrect results, assertions and crashes.
+==83206== WARNING: In particular, Memcheck on 32-bit programs will fail to
+==83206== WARNING: detect any errors associated with heap-allocated data.
+==83206== 
+--83206-- ./RunVoting.c++.app:
+--83206-- dSYM directory is missing; consider using --dsymutil=yes
+Jodie Cavalieri
+
+Clementine Dengler
+
+Tomiko Stanton
+
+Manda Marksberry
+
+Cyrstal Mcdaniels
+
+Devorah Steinman
+
+Al Villacis
+
+Chad Masten
+
+Myrle Eby
+==83206== 
+==83206== HEAP SUMMARY:
+==83206==     in use at exit: 74,223 bytes in 357 blocks
+==83206==   total heap usage: 14,887 allocs, 14,530 frees, 4,258,328 bytes allocated
+==83206== 
+==83206== LEAK SUMMARY:
+==83206==    definitely lost: 0 bytes in 0 blocks
+==83206==    indirectly lost: 0 bytes in 0 blocks
+==83206==      possibly lost: 5,869 bytes in 57 blocks
+==83206==    still reachable: 68,354 bytes in 300 blocks
+==83206==         suppressed: 0 bytes in 0 blocks
+==83206== Rerun with --leak-check=full to see details of leaked memory
+==83206== 
+==83206== For counts of detected and suppressed errors, rerun with: -v
+==83206== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
