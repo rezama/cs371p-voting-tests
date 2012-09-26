@@ -1,0 +1,60 @@
+==12732== Memcheck, a memory error detector
+==12732== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==12732== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==12732== Command: RunVoting.c++.app
+==12732== 
+Sofia Jilek
+
+Neil Glantz
+
+Clinton Bartee
+
+Javier Shufelt
+
+Max Hinnant
+
+Rae Holtzclaw
+
+Max Akerley
+
+Pearlie Sharlow
+
+Javier Shufelt
+
+Lonnie Montalvan
+
+Javier Shufelt
+
+Max Akerley
+
+Javier Shufelt
+
+Tia Manser
+
+Erik Coletti
+
+Louisa Bruney
+
+Clayton Kantner
+
+Darryl Winnie
+
+Clayton Kantner
+
+Louisa Ishee
+Javier Shufelt
+==12732== 
+==12732== HEAP SUMMARY:
+==12732==     in use at exit: 122,880 bytes in 6 blocks
+==12732==   total heap usage: 49,814 allocs, 49,808 frees, 3,621,008 bytes allocated
+==12732== 
+==12732== LEAK SUMMARY:
+==12732==    definitely lost: 0 bytes in 0 blocks
+==12732==    indirectly lost: 0 bytes in 0 blocks
+==12732==      possibly lost: 0 bytes in 0 blocks
+==12732==    still reachable: 122,880 bytes in 6 blocks
+==12732==         suppressed: 0 bytes in 0 blocks
+==12732== Rerun with --leak-check=full to see details of leaked memory
+==12732== 
+==12732== For counts of detected and suppressed errors, rerun with: -v
+==12732== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
