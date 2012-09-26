@@ -51,6 +51,11 @@ struct TestVoting : CppUnit::TestFixture {
         const bool b = is_next_line_empty(r);
         CPPUNIT_ASSERT(b == true);}
 
+    void test_is_next_line_empty_3 () {
+        std::istringstream r("aa");
+        const bool b = is_next_line_empty(r);
+        CPPUNIT_ASSERT(b == false);}
+
     void test_get_num_cases_1 () {
         std::istringstream r("0\n");
         const int num_cases = get_num_cases(r);
@@ -60,6 +65,12 @@ struct TestVoting : CppUnit::TestFixture {
         std::istringstream r("10\n");
         const int num_cases = get_num_cases(r);
         CPPUNIT_ASSERT(num_cases == 10);}
+
+    void test_get_num_cases_3 () {
+        std::istringstream r("11\n");
+        const int num_cases = get_num_cases(r);
+        CPPUNIT_ASSERT(num_cases == 11);}
+
 
     void test_read_case_1 () {
         std::istringstream r("3\nCand1\nCand2\nCand3\n1 2 3\n");
@@ -393,6 +404,29 @@ struct TestVoting : CppUnit::TestFixture {
        CPPUNIT_ASSERT(get_lowest_num_votes(votes, num_candidates) == 2);
     }
 
+    void get_lowest_num_votes_3 () {
+
+        Ballot ballot_1 = {1, 2, 3};
+        Ballot ballot_2 = {2, 1, 3};
+        Ballot ballot_3 = {1, 2, 3};
+        Ballot ballot_4 = {1, 3, 2};
+        Ballot ballot_5 = {3, 2, 1};
+        Ballot ballot_6 = {1, 2, 3};
+        Ballot ballot_7 = {3, 2, 1};
+
+        Votes votes;
+        int num_candidates = 3;
+        votes[1].push_back(ballot_1);
+        votes[1].push_back(ballot_3);
+        votes[1].push_back(ballot_4);
+        votes[1].push_back(ballot_6);
+        votes[2].push_back(ballot_2);
+        votes[3].push_back(ballot_5);
+        votes[3].push_back(ballot_7);
+
+       CPPUNIT_ASSERT(get_lowest_num_votes(votes, num_candidates) == 1);
+    }
+
     // -----
     // update_lowest_votes
     // -----
@@ -448,15 +482,45 @@ struct TestVoting : CppUnit::TestFixture {
 
     }
 
+    void update_lowest_votes_3 () {
+
+        Ballot ballot_1 = {1, 2, 3};
+        Ballot ballot_2 = {2, 1, 3};
+        Ballot ballot_3 = {1, 2, 3};
+        Ballot ballot_4 = {2, 3, 1};
+        Ballot ballot_5 = {3, 2, 1};
+        Ballot ballot_6 = {1, 2, 3};
+
+        Votes votes;
+        votes[1].push_back(ballot_1);
+        votes[1].push_back(ballot_3);
+        votes[1].push_back(ballot_6);
+        votes[2].push_back(ballot_2);
+        votes[2].push_back(ballot_4);
+        votes[3].push_back(ballot_5);
+        
+        int num_candidates = 3;
+        update_lowest_votes(votes, num_candidates);
+        CPPUNIT_ASSERT(votes[1].size() == 3);
+        CPPUNIT_ASSERT(votes[2].size() == 3);
+        CPPUNIT_ASSERT(votes[3].size() == 0);
+
+    }
+
     // -----
     // suite
     // -----
 
     CPPUNIT_TEST_SUITE(TestVoting);
+
     CPPUNIT_TEST(test_is_next_line_empty_1);
     CPPUNIT_TEST(test_is_next_line_empty_2);
+    CPPUNIT_TEST(test_is_next_line_empty_3);
+
     CPPUNIT_TEST(test_get_num_cases_1);
     CPPUNIT_TEST(test_get_num_cases_2);
+    CPPUNIT_TEST(test_get_num_cases_3);
+
     CPPUNIT_TEST(test_read_case_1);
     CPPUNIT_TEST(test_read_case_2);
     CPPUNIT_TEST(test_read_case_3);
@@ -476,9 +540,11 @@ struct TestVoting : CppUnit::TestFixture {
 
     CPPUNIT_TEST(get_lowest_num_votes_1);
     CPPUNIT_TEST(get_lowest_num_votes_2);
+    CPPUNIT_TEST(get_lowest_num_votes_3);
 
     CPPUNIT_TEST(update_lowest_votes_1);
     CPPUNIT_TEST(update_lowest_votes_2);
+    CPPUNIT_TEST(update_lowest_votes_3);
 
     CPPUNIT_TEST_SUITE_END();};
 
