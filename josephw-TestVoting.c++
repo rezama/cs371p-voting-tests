@@ -115,7 +115,7 @@ struct TestVoting : CppUnit::TestFixture {
     	std::string s;
     	const bool b = voting_str_read(r, s);
     	CPPUNIT_ASSERT(b == true);
-    	CPPUNIT_ASSERT(s.compare("John Doe") == 0);
+    	CPPUNIT_ASSERT(s == "John Doe");
     }
 
     void test_str_read_2 () {
@@ -123,7 +123,7 @@ struct TestVoting : CppUnit::TestFixture {
     	std::string s;
     	const bool b = voting_str_read(r, s);
     	CPPUNIT_ASSERT(b == true);
-    	CPPUNIT_ASSERT(s.compare("Bob Barker") == 0);
+    	CPPUNIT_ASSERT(s == "Bob Barker");
     }
 
     void test_str_read_3 () {
@@ -131,7 +131,7 @@ struct TestVoting : CppUnit::TestFixture {
     	std::string s;
     	const bool b = voting_str_read(r, s);
     	CPPUNIT_ASSERT(b == true);
-    	CPPUNIT_ASSERT(s.compare("Steve Jobs") == 0);
+    	CPPUNIT_ASSERT(s == "Steve Jobs");
     }
 
     // ----
@@ -210,8 +210,8 @@ struct TestVoting : CppUnit::TestFixture {
     	CPPUNIT_ASSERT(b == true);
     	CPPUNIT_ASSERT(n_candidates == 2);
     	CPPUNIT_ASSERT(n_ballots == 3);
-    	CPPUNIT_ASSERT(candidates[0].compare("Apple Pie") == 0);
-    	CPPUNIT_ASSERT(candidates[1].compare("Banana Bob") == 0);
+    	CPPUNIT_ASSERT(candidates[0] == "Apple Pie");
+    	CPPUNIT_ASSERT(candidates[1] == "Banana Bob");
     	CPPUNIT_ASSERT(ballot_array[0].position == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[0] == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[1] == 1);
@@ -233,8 +233,8 @@ struct TestVoting : CppUnit::TestFixture {
     	CPPUNIT_ASSERT(b == true);
     	CPPUNIT_ASSERT(n_candidates == 2);
     	CPPUNIT_ASSERT(n_ballots == 2);
-    	CPPUNIT_ASSERT(candidates[0].compare("Apple Pie") == 0);
-    	CPPUNIT_ASSERT(candidates[1].compare("Banana Bob") == 0);
+    	CPPUNIT_ASSERT(candidates[0] == "Apple Pie");
+    	CPPUNIT_ASSERT(candidates[1] == "Banana Bob");
     	CPPUNIT_ASSERT(ballot_array[0].position == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[0] == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[1] == 1);
@@ -253,9 +253,9 @@ struct TestVoting : CppUnit::TestFixture {
     	CPPUNIT_ASSERT(b == true);
     	CPPUNIT_ASSERT(n_candidates == 3);
     	CPPUNIT_ASSERT(n_ballots == 4);
-    	CPPUNIT_ASSERT(candidates[0].compare("Jake") == 0);
-    	CPPUNIT_ASSERT(candidates[1].compare("Jim") == 0);
-    	CPPUNIT_ASSERT(candidates[2].compare("Elain") == 0);
+    	CPPUNIT_ASSERT(candidates[0] == "Jake");
+    	CPPUNIT_ASSERT(candidates[1] == "Jim");
+    	CPPUNIT_ASSERT(candidates[2] == "Elain");
     	CPPUNIT_ASSERT(ballot_array[0].position == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[0] == 0);
     	CPPUNIT_ASSERT(ballot_array[0].pref[1] == 1);
@@ -313,7 +313,7 @@ struct TestVoting : CppUnit::TestFixture {
 
     	std::string winner = "";
     	voting_eval(ballot_array, candidates, n_candidates, n_ballots, winner);
-		assert(winner.compare("Apple Pie") == 0);
+		assert(winner == "Apple Pie");
 	}
 
     void test_eval_2 () { //2 person tie
@@ -328,7 +328,7 @@ struct TestVoting : CppUnit::TestFixture {
     	
     	std::string winner = "";
     	voting_eval(ballot_array, candidates, n_candidates, n_ballots, winner);
-		assert(winner.compare("Apple Pie\nBanana Bob") == 0);
+		assert(winner == "Apple Pie\nBanana Bob");
     }
 
     void test_eval_3 () { //3 people, 2 tie
@@ -343,7 +343,32 @@ struct TestVoting : CppUnit::TestFixture {
 
     	std::string winner = "";
     	voting_eval(ballot_array, candidates, n_candidates, n_ballots, winner);
-		assert(winner.compare("Jake\nJim") == 0);
+		assert(winner == "Jake\nJim");
+    }
+
+    // -----
+    // solve
+    // -----
+
+   	void test_solve_1 () {
+    	std::istringstream r("1\n\n2\nApple Pie\nBanana Bob\n1 2\n1 2\n2 1");
+    	std::ostringstream w;
+    	voting_solve(r, w);
+    	CPPUNIT_ASSERT(w.str() == "Apple Pie\n");
+    }
+
+    void test_solve_2 () {
+    	std::istringstream r("1\n\n2\nApple Pie\nBanana Bob");
+    	std::ostringstream w;
+    	voting_solve(r, w);
+    	CPPUNIT_ASSERT(w.str() == "Apple Pie\nBanana Bob\n");
+    }
+
+   	void test_solve_3 () {
+    	std::istringstream r("3\n\n2\nApple Pie\nBanana Bob\n1 2\n1 2\n2 1\n\n2\nApple Pie\nBanana Bob\n\n1\nJohn Lennon\n1");
+    	std::ostringstream w;
+    	voting_solve(r, w);
+    	CPPUNIT_ASSERT(w.str() == "Apple Pie\n\nApple Pie\nBanana Bob\n\nJohn Lennon\n");
     }
 
     // -----
@@ -372,6 +397,9 @@ struct TestVoting : CppUnit::TestFixture {
     CPPUNIT_TEST(test_eval_1);
     CPPUNIT_TEST(test_eval_2);
     CPPUNIT_TEST(test_eval_3);
+    CPPUNIT_TEST(test_solve_1);
+    CPPUNIT_TEST(test_solve_2);
+    CPPUNIT_TEST(test_solve_3);
     CPPUNIT_TEST_SUITE_END();
 };
 
