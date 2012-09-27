@@ -1,0 +1,39 @@
+==21274== Memcheck, a memory error detector
+==21274== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==21274== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==21274== Command: ./RunVoting.c++.app
+==21274== 
+Darth Vader
+
+Sauron
+
+Norman Bates
+
+Sauron
+
+Darth Vader
+
+Magneto
+
+Cthulu
+
+Dracula
+
+The Joker
+
+Josef Stalin
+==21274== 
+==21274== HEAP SUMMARY:
+==21274==     in use at exit: 122,880 bytes in 6 blocks
+==21274==   total heap usage: 15,611 allocs, 15,605 frees, 4,255,727 bytes allocated
+==21274== 
+==21274== LEAK SUMMARY:
+==21274==    definitely lost: 0 bytes in 0 blocks
+==21274==    indirectly lost: 0 bytes in 0 blocks
+==21274==      possibly lost: 0 bytes in 0 blocks
+==21274==    still reachable: 122,880 bytes in 6 blocks
+==21274==         suppressed: 0 bytes in 0 blocks
+==21274== Rerun with --leak-check=full to see details of leaked memory
+==21274== 
+==21274== For counts of detected and suppressed errors, rerun with: -v
+==21274== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
