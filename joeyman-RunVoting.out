@@ -1,0 +1,2054 @@
+==19491== Memcheck, a memory error detector
+==19491== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==19491== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==19491== Command: RunVoting.c++.app
+==19491== 
+Green 2
+
+Black 1
+
+Indigo 1
+
+Yellow 2
+
+Red 1
+
+Brown 1
+
+Red 2
+
+White 2
+
+Red 1
+
+Green 2
+
+White 2
+
+Red 2
+
+Blue 1
+
+Violet 1
+
+Blue 1
+
+Blue 2
+
+Blue 2
+
+Yellow 1
+
+White 2
+Brown 1
+
+White 2
+
+Brown 2
+
+Brown 2
+
+Yellow 2
+
+Yellow 2
+
+Red 2
+
+Black 2
+Violet 1
+
+Brown 1
+Orange 1
+
+Yellow 2
+
+Red 2
+Blue 1
+
+Green 1
+Brown 1
+Red 2
+
+White 2
+
+Yellow 2
+
+Violet 1
+
+Violet 1
+
+Yellow 1
+
+Indigo 2
+
+Violet 1
+
+Yellow 2
+
+Green 2
+
+Green 1
+
+Violet 1
+
+Black 1
+
+Indigo 2
+
+Orange 2
+
+Black 2
+
+Red 1
+
+Red 1
+
+Orange 2
+
+Red 2
+
+Yellow 1
+
+Black 2
+
+Green 1
+
+Violet 1
+
+Blue 2
+
+Blue 1
+
+Red 2
+
+Orange 1
+
+Blue 1
+
+Violet 2
+
+Yellow 2
+
+Yellow 2
+
+Green 1
+
+Yellow 2
+
+Violet 2
+
+Violet 1
+
+Orange 2
+
+Indigo 1
+
+Brown 1
+
+Blue 1
+
+Green 2
+
+Yellow 1
+
+Green 2
+
+Yellow 1
+
+Blue 2
+
+Green 1
+
+Indigo 2
+
+Brown 2
+
+Red 1
+
+Blue 1
+
+Blue 2
+
+Green 2
+
+Red 2
+
+Yellow 2
+
+Red 2
+
+Orange 2
+
+Blue 2
+
+Brown 2
+
+Blue 2
+
+Black 2
+
+Indigo 1
+Yellow 1
+
+Black 2
+
+Black 1
+
+Green 1
+
+Yellow 1
+
+Orange 2
+
+Indigo 2
+
+Yellow 2
+
+Orange 1
+
+Brown 2
+
+Blue 1
+
+Brown 1
+
+White 2
+
+White 2
+
+Red 1
+
+Red 2
+
+Violet 1
+
+White 2
+
+White 2
+
+Green 1
+
+Green 2
+
+Red 1
+
+Black 2
+
+Black 1
+
+White 1
+
+Red 1
+
+Indigo 1
+
+Brown 2
+Indigo 2
+
+Orange 1
+
+Brown 2
+
+Orange 2
+
+White 1
+
+Green 1
+Indigo 1
+
+Blue 2
+
+Black 2
+Violet 2
+
+Yellow 2
+
+Indigo 2
+
+Green 2
+
+Orange 2
+
+Black 1
+
+Indigo 1
+
+Orange 2
+
+Indigo 1
+
+White 1
+Blue 2
+
+Black 2
+
+Yellow 2
+
+Blue 1
+
+Brown 1
+
+Red 1
+
+Brown 1
+
+Violet 1
+
+Brown 2
+
+Yellow 1
+
+Violet 1
+
+Orange 1
+
+White 2
+
+White 1
+
+Indigo 2
+
+Brown 2
+
+Yellow 1
+
+Orange 2
+
+Violet 2
+
+Yellow 1
+
+White 2
+
+White 1
+
+Violet 2
+
+Brown 1
+
+Red 1
+
+Yellow 1
+
+Brown 1
+
+Blue 2
+
+Brown 1
+
+Indigo 1
+
+Violet 2
+Indigo 2
+
+Black 1
+
+Yellow 1
+
+Yellow 2
+
+Red 2
+
+Orange 1
+
+Orange 2
+
+White 1
+
+Blue 1
+
+Indigo 1
+
+Black 1
+
+Indigo 1
+
+Red 1
+
+Yellow 2
+
+Blue 2
+
+Orange 2
+
+Yellow 1
+
+Violet 2
+
+Violet 2
+
+Violet 1
+
+Green 1
+
+Blue 2
+
+Yellow 1
+
+Orange 2
+
+Black 1
+
+Indigo 2
+
+Green 2
+
+Green 1
+
+Orange 2
+
+Red 1
+
+Orange 1
+
+Blue 1
+
+Orange 1
+
+Green 2
+
+Orange 2
+
+Blue 2
+
+Yellow 1
+
+Green 2
+
+Blue 2
+
+Orange 2
+
+Green 2
+
+Green 1
+
+Orange 1
+
+Yellow 1
+
+Black 1
+
+Yellow 2
+
+Yellow 1
+
+Violet 2
+
+Black 1
+
+Yellow 2
+
+Red 1
+
+Blue 2
+
+Violet 2
+
+Blue 1
+
+Brown 1
+
+White 1
+
+Yellow 1
+
+Indigo 1
+
+Indigo 1
+
+Yellow 2
+
+Blue 1
+
+Brown 2
+
+Black 1
+
+White 1
+
+Red 2
+
+White 1
+
+White 2
+
+Brown 2
+
+Green 1
+
+Blue 1
+
+Black 1
+
+Indigo 2
+
+Blue 1
+
+Black 2
+
+Indigo 2
+
+Brown 1
+
+Red 1
+
+Red 1
+
+Red 1
+
+Yellow 2
+
+White 2
+
+Orange 1
+
+Green 1
+
+Yellow 1
+
+Indigo 1
+
+Green 2
+
+Yellow 2
+
+Yellow 1
+
+Orange 2
+
+Indigo 2
+
+Yellow 1
+
+Red 2
+
+White 2
+
+Yellow 2
+Red 1
+
+Violet 1
+
+Green 2
+
+Green 1
+
+Blue 1
+
+Red 1
+
+White 2
+
+Violet 1
+
+Orange 2
+
+Violet 2
+
+Red 1
+
+Green 1
+
+Violet 2
+
+Brown 1
+
+Blue 2
+
+Blue 1
+
+White 2
+
+Yellow 1
+
+Brown 1
+
+Violet 2
+
+Green 1
+
+Brown 2
+
+Orange 2
+
+Red 2
+
+Black 1
+
+Yellow 1
+
+White 1
+
+Yellow 1
+
+Orange 1
+
+White 2
+
+Indigo 2
+
+Black 1
+
+Green 2
+
+Orange 2
+
+Red 2
+
+Indigo 1
+
+Brown 1
+
+Red 1
+
+White 1
+
+White 2
+
+Red 2
+
+Blue 2
+
+Yellow 1
+
+Brown 2
+
+White 1
+
+Indigo 1
+
+White 1
+
+Violet 1
+
+Yellow 1
+
+Yellow 1
+
+Black 2
+
+Violet 1
+
+Green 2
+
+Blue 2
+Red 2
+
+Red 2
+
+Blue 1
+
+Brown 1
+
+Yellow 1
+
+Green 2
+
+Violet 1
+
+Blue 2
+
+Brown 2
+
+White 2
+
+Green 1
+
+Green 1
+
+Orange 1
+
+Black 1
+
+Black 2
+
+Red 2
+
+Black 2
+
+Brown 1
+
+Blue 2
+
+Yellow 1
+
+Yellow 1
+
+White 2
+
+Black 1
+
+Violet 1
+
+Brown 1
+
+Indigo 1
+
+White 2
+
+Yellow 2
+
+Brown 1
+
+White 2
+
+Indigo 1
+
+Orange 2
+
+White 1
+
+Green 2
+
+Yellow 1
+
+Yellow 1
+
+Yellow 1
+
+Orange 1
+
+Violet 1
+
+Brown 1
+
+Brown 2
+
+Indigo 2
+
+Brown 2
+
+Green 1
+
+Red 1
+
+Violet 2
+
+Violet 2
+
+White 2
+
+Violet 1
+
+Red 1
+
+Red 2
+
+Brown 1
+
+Yellow 2
+
+Black 1
+
+Indigo 1
+
+Green 1
+
+White 1
+
+Violet 2
+Blue 1
+
+Blue 2
+
+Orange 1
+
+Red 2
+
+Brown 1
+
+Brown 1
+
+Indigo 2
+
+Green 2
+
+Black 2
+
+Violet 2
+
+Blue 1
+
+Indigo 2
+
+Violet 1
+
+Yellow 2
+
+Orange 2
+
+Brown 1
+
+Violet 1
+
+Green 1
+
+Brown 2
+
+Indigo 2
+
+Yellow 2
+
+Orange 1
+
+Blue 1
+
+White 2
+
+Yellow 2
+
+Indigo 2
+
+Yellow 2
+
+Black 2
+
+Blue 1
+
+Red 2
+
+Black 2
+
+White 2
+
+Black 1
+
+Red 1
+
+Orange 2
+
+Black 2
+
+Blue 1
+
+Green 2
+
+Red 2
+
+Violet 1
+
+Brown 1
+
+Green 1
+
+Red 1
+
+Black 2
+
+Blue 2
+
+Green 1
+
+Blue 1
+
+White 1
+
+Blue 2
+
+Indigo 2
+
+Red 1
+Indigo 1
+
+Brown 2
+
+Orange 1
+
+Violet 2
+
+Orange 1
+
+Green 1
+
+White 1
+
+Violet 1
+
+Brown 2
+
+Yellow 1
+
+Red 1
+
+Yellow 2
+
+Red 1
+
+Blue 2
+
+Indigo 1
+
+Violet 1
+
+Blue 2
+
+Black 2
+
+White 1
+
+Violet 2
+
+Blue 1
+
+Violet 2
+
+Indigo 1
+
+Indigo 2
+
+Blue 1
+
+Blue 2
+
+Indigo 1
+
+Blue 2
+
+White 1
+
+Green 2
+
+Yellow 2
+
+Blue 1
+
+Violet 2
+
+Red 1
+
+Violet 2
+
+Blue 1
+
+Brown 2
+
+Orange 1
+
+Red 1
+
+Blue 1
+
+Indigo 1
+
+Green 1
+
+Black 2
+
+Black 2
+
+White 1
+
+Red 1
+
+Orange 1
+
+Blue 2
+
+Red 1
+
+Orange 1
+
+Yellow 2
+
+Violet 2
+
+Indigo 2
+
+Indigo 2
+
+Orange 1
+
+White 1
+
+Green 1
+
+Yellow 2
+
+Blue 2
+
+Indigo 1
+
+Black 2
+
+White 1
+
+Indigo 1
+
+Blue 1
+
+Green 1
+
+Green 1
+
+White 2
+
+Yellow 1
+
+Green 2
+
+Indigo 1
+
+Green 2
+
+Indigo 1
+
+Red 1
+
+White 2
+
+Yellow 2
+
+Violet 1
+
+Blue 1
+
+White 2
+
+Green 1
+
+Brown 1
+White 2
+
+Brown 2
+
+Blue 1
+
+Brown 2
+
+Brown 2
+
+Orange 1
+
+Black 1
+
+Brown 2
+
+Brown 2
+
+Indigo 2
+
+Violet 2
+
+Black 2
+
+Green 2
+
+Violet 2
+
+Black 1
+
+Violet 1
+
+White 2
+
+Orange 1
+Green 2
+
+Black 1
+
+Yellow 2
+
+Yellow 2
+
+Black 1
+
+Blue 1
+
+Green 1
+
+Indigo 2
+
+Violet 2
+
+Orange 1
+
+White 1
+
+Yellow 1
+
+Orange 1
+
+Orange 2
+
+Yellow 2
+
+Violet 1
+
+Red 1
+
+Indigo 2
+
+Black 1
+
+Blue 2
+
+Orange 2
+
+White 1
+
+White 2
+
+Violet 1
+
+White 2
+
+Blue 1
+
+Blue 1
+
+Indigo 1
+
+Yellow 1
+
+Yellow 1
+
+Blue 2
+
+Red 1
+
+Red 2
+
+Indigo 2
+
+Green 2
+
+White 2
+
+Indigo 1
+
+Violet 1
+
+Green 1
+
+Indigo 2
+
+Indigo 2
+Yellow 1
+
+Indigo 2
+
+Black 1
+
+Yellow 1
+
+Blue 2
+
+Green 2
+
+Violet 2
+
+White 1
+
+Orange 1
+
+Yellow 2
+
+Brown 1
+
+Red 1
+
+Green 1
+
+White 2
+
+Red 2
+
+Orange 2
+
+Red 1
+
+Violet 1
+
+Black 1
+
+Black 2
+
+Indigo 1
+
+Red 2
+Blue 1
+
+Red 1
+
+Blue 1
+
+White 1
+
+Orange 2
+
+Red 2
+Brown 1
+
+Black 1
+
+Red 2
+
+Red 1
+
+Red 1
+
+Black 1
+
+Yellow 2
+
+Green 2
+
+Indigo 2
+
+Red 2
+
+Black 2
+
+Black 2
+
+Violet 2
+
+Green 2
+
+Red 2
+
+Green 1
+White 1
+
+Blue 1
+
+Violet 2
+
+Black 1
+
+Green 1
+
+White 2
+
+Yellow 1
+
+Blue 2
+
+Violet 2
+
+White 1
+
+Green 2
+
+Red 1
+
+White 1
+
+Red 1
+
+Green 1
+
+Blue 1
+
+Blue 1
+
+Indigo 1
+
+Violet 1
+
+White 2
+
+Indigo 2
+
+Indigo 1
+
+Brown 2
+
+Brown 2
+
+Black 2
+
+White 2
+
+Brown 1
+
+Yellow 1
+
+Orange 2
+
+Brown 1
+
+Green 2
+
+Blue 2
+
+White 1
+
+Violet 1
+
+Brown 2
+
+Indigo 2
+
+Green 2
+
+White 1
+
+Red 2
+
+Violet 1
+
+Orange 1
+
+Orange 1
+
+Brown 1
+
+Red 1
+
+Black 1
+
+Blue 1
+
+Brown 2
+
+Indigo 2
+
+Yellow 1
+
+Brown 1
+
+Yellow 2
+
+Black 1
+
+Brown 1
+
+Blue 1
+
+Violet 1
+
+Red 1
+
+Brown 1
+
+Brown 1
+
+Yellow 2
+
+Violet 1
+
+Green 1
+
+White 2
+
+Yellow 2
+
+Indigo 2
+
+Yellow 2
+
+Violet 1
+
+Yellow 2
+
+Red 1
+
+Green 1
+
+Brown 2
+
+Yellow 2
+
+Brown 1
+
+Green 1
+
+Red 2
+
+White 1
+
+Green 1
+
+Violet 1
+
+Blue 1
+
+White 1
+
+Blue 2
+
+Yellow 1
+
+Violet 2
+
+Black 1
+
+Blue 2
+
+Orange 2
+
+Black 2
+Indigo 1
+Green 1
+
+Violet 1
+
+Blue 1
+
+Orange 2
+
+Brown 1
+
+Yellow 2
+
+Yellow 2
+
+Violet 2
+
+White 2
+
+Green 2
+
+Indigo 2
+
+White 1
+
+Black 1
+
+Violet 1
+
+White 1
+
+Orange 1
+
+Red 2
+
+Blue 1
+
+White 2
+
+Brown 1
+
+Yellow 1
+
+White 2
+
+White 1
+
+Red 2
+
+Indigo 2
+Black 1
+
+Violet 1
+
+Violet 2
+
+Orange 2
+
+Indigo 1
+
+Blue 2
+
+Indigo 2
+
+Orange 2
+
+Indigo 1
+
+Brown 2
+
+Indigo 1
+
+Orange 2
+
+Green 2
+
+Brown 1
+
+Orange 2
+
+Green 1
+
+Blue 2
+
+Violet 2
+
+Orange 2
+
+White 2
+
+Violet 1
+
+Black 2
+
+Blue 2
+
+White 2
+
+Brown 1
+
+Yellow 2
+
+Brown 2
+
+Yellow 2
+
+Violet 1
+
+Yellow 1
+
+Black 2
+
+Violet 2
+
+Yellow 1
+
+Violet 1
+
+Brown 1
+
+Orange 2
+
+Brown 1
+
+Black 2
+
+Black 1
+
+White 2
+
+Green 2
+
+Green 2
+
+Violet 2
+
+Brown 1
+
+White 1
+
+Green 2
+
+Black 2
+
+Brown 2
+
+Violet 1
+
+Indigo 2
+
+Brown 2
+
+White 1
+
+Red 1
+
+Violet 2
+
+White 1
+
+Orange 1
+
+Green 1
+
+Indigo 1
+
+Blue 2
+
+Blue 1
+
+Violet 2
+
+Indigo 2
+
+Red 2
+
+Black 1
+
+Indigo 2
+
+Green 2
+
+Blue 1
+
+Black 1
+
+Indigo 1
+
+Yellow 2
+
+Brown 1
+
+Violet 1
+
+Black 1
+
+Green 2
+
+Yellow 1
+
+Red 2
+Green 2
+Green 1
+
+Black 2
+
+Yellow 1
+
+White 1
+
+Red 2
+
+Violet 1
+
+Green 2
+
+White 1
+
+Brown 2
+
+Black 1
+
+Black 2
+
+Black 1
+
+Orange 1
+
+Brown 1
+
+Yellow 2
+
+Yellow 2
+
+Green 1
+
+Black 2
+
+Brown 2
+
+Blue 1
+
+Green 1
+Brown 2
+
+Violet 2
+
+White 2
+
+Green 2
+
+Black 1
+
+Blue 1
+
+Red 2
+
+White 2
+
+Yellow 1
+
+Orange 2
+
+Blue 1
+
+Orange 1
+
+Green 2
+
+Orange 2
+
+Blue 2
+
+Yellow 2
+
+Red 2
+
+Brown 1
+
+Orange 1
+
+Orange 2
+
+Red 1
+
+Brown 2
+
+Brown 1
+
+Red 1
+
+Green 2
+
+White 1
+
+Red 1
+
+Green 1
+
+Indigo 2
+
+Indigo 1
+
+White 1
+
+Black 1
+
+Green 2
+
+Blue 2
+
+White 2
+
+Brown 1
+
+Green 1
+Orange 2
+
+White 2
+
+Violet 1
+
+Indigo 2
+
+Red 2
+
+Indigo 2
+
+Black 1
+
+Violet 1
+
+Indigo 1
+
+Green 1
+
+Yellow 2
+
+Brown 2
+
+Orange 2
+
+Brown 1
+
+Blue 1
+
+Black 2
+
+Black 1
+
+Green 1
+
+Red 2
+
+Orange 2
+
+Red 2
+
+Orange 2
+
+Black 1
+
+Red 2
+
+Black 2
+
+Violet 1
+
+Red 1
+
+Red 2
+
+Green 1
+
+Violet 1
+
+Blue 2
+
+Indigo 1
+
+White 1
+
+Red 2
+
+Yellow 1
+
+Yellow 1
+
+Black 2
+
+Red 2
+
+White 2
+
+Brown 1
+
+White 1
+
+Violet 2
+
+Blue 1
+
+Green 2
+
+Black 2
+
+White 1
+Indigo 1
+
+Green 1
+
+Red 1
+
+Violet 1
+
+Orange 2
+
+Violet 1
+
+White 2
+
+Black 2
+
+Green 2
+
+Indigo 1
+
+Brown 2
+
+Green 1
+
+Violet 1
+
+Violet 2
+
+Blue 2
+
+Orange 1
+
+Yellow 2
+
+White 1
+
+Brown 1
+
+White 1
+
+Indigo 1
+
+Blue 2
+
+Blue 2
+Green 1
+
+Indigo 2
+
+Brown 1
+
+Brown 2
+
+Indigo 1
+
+Indigo 1
+
+Indigo 2
+
+Violet 1
+
+Green 2
+
+Brown 2
+
+Green 1
+
+Blue 2
+
+Yellow 2
+
+Indigo 2
+
+Orange 1
+
+Brown 1
+
+Yellow 1
+
+Indigo 1
+
+Red 1
+
+White 2
+
+Green 1
+
+Blue 2
+
+Yellow 1
+
+Violet 2
+
+Brown 2
+
+White 1
+
+Violet 2
+
+Indigo 1
+
+Black 2
+
+Yellow 2
+
+Red 1
+
+Black 2
+
+White 2
+
+Black 1
+
+Yellow 2
+
+Orange 2
+
+Brown 1
+
+Blue 2
+
+Indigo 1
+
+Black 2
+
+Red 1
+
+Orange 1
+
+White 2
+
+Yellow 1
+
+Orange 1
+
+Violet 1
+
+Indigo 2
+
+Red 2
+
+Red 1
+
+Red 2
+
+Blue 1
+
+White 1
+
+Red 2
+
+Yellow 2
+
+Blue 1
+
+Brown 1
+
+Violet 2
+
+Orange 1
+
+Red 2
+
+Blue 2
+
+Orange 1
+
+Orange 1
+
+Red 1
+
+Violet 1
+
+Black 2
+
+Brown 2
+
+Black 2
+
+Indigo 2
+
+Orange 2
+
+Green 2
+
+Violet 1
+
+Yellow 1
+Orange 1
+
+White 2
+
+Yellow 2
+
+White 1
+
+Black 1
+
+Violet 2
+
+Orange 2
+
+Brown 2
+
+White 2
+
+Violet 1
+
+Red 1
+
+Blue 1
+
+Red 1
+
+Indigo 1
+
+Blue 1
+Indigo 2
+
+Black 1
+
+Brown 1
+
+Yellow 2
+
+Violet 1
+
+Indigo 1
+Green 2
+
+Red 2
+
+Yellow 2
+
+Blue 2
+
+Red 2
+
+Violet 1
+
+Indigo 2
+
+Black 1
+Yellow 1
+
+Red 2
+
+Green 2
+
+Brown 2
+==19491== 
+==19491== HEAP SUMMARY:
+==19491==     in use at exit: 122,880 bytes in 6 blocks
+==19491==   total heap usage: 3,729,211 allocs, 3,729,205 frees, 161,057,709 bytes allocated
+==19491== 
+==19491== LEAK SUMMARY:
+==19491==    definitely lost: 0 bytes in 0 blocks
+==19491==    indirectly lost: 0 bytes in 0 blocks
+==19491==      possibly lost: 0 bytes in 0 blocks
+==19491==    still reachable: 122,880 bytes in 6 blocks
+==19491==         suppressed: 0 bytes in 0 blocks
+==19491== Rerun with --leak-check=full to see details of leaked memory
+==19491== 
+==19491== For counts of detected and suppressed errors, rerun with: -v
+==19491== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
